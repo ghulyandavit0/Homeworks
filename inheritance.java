@@ -1,36 +1,34 @@
-package system_design;
-
 /**
- *  system_design.Parent class
+ *  Parent class
  */
 class Parent {
     void showMessage() {
-        System.out.println("Hello system_design.Parent class");
+        System.out.println("Hello Parent class");
     }
 }
 
 /**
- * system_design.Child class inheriting from system_design.Parent
+ * Child class inheriting from Parent
  */
-public class Child extends Parent {
+class Child extends Parent {
     @Override
     void showMessage() {
         super.showMessage();
-        System.out.println("Hello system_design.Child class");
+        System.out.println("Hello Child class");
     }
 }
 
 /**
- * system_design.Parent class
+ * Parent class
  */
 class SuperClass {
-    String message = "Hello system_design.SuperClass class";
+    String message = "Hello SuperClass class";
 }
 /**
  * Subclass inheriting from superclass
  */
 class SubClass extends SuperClass {
-    String message = "Hello system_design.SubClass class";
+    String message = "Hello SubClass class";
 }
 class Car {
     int passengerCount;
@@ -73,7 +71,7 @@ class Car {
     }
 }
 /**
- * inherits from system_design.Car class
+ * inherits from Car class
  */
 class Truck extends Car {
     int capacity;
@@ -100,7 +98,8 @@ class Truck extends Car {
     public void setCapacity(int capacity) {
         this.capacity = capacity;
     }
-
+}
+public class inheritance {
     public static void main(String[] args) {
         Child obj1 = new Child();
         obj1.showMessage();
